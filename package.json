@@ -1,0 +1,27 @@
+{
+  "name": "react-django",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./todolist/frontend/src/index.js --output ./todolist/frontend/static/frontend/main.js",
+    "build": "dev webpack --mode production ./todolist/frontend/src/index.js --output ./todolist/frontend/static/frontend/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  }
+}
